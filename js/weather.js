@@ -43,7 +43,7 @@ function gettingJSON(){
         console.log(json['main']['temp'])
         temp.innerHTML=json['main']['temp'] + ' with '+ json['weather'][0]['description']
         loc.innerHTML=json['name']
-        tempImg.src='http://openweathermap.org/img/wn/'+json['weather'][0]['icon']+'@2x.png'
+        tempImg.src='https://openweathermap.org/img/wn/'+json['weather'][0]['icon']+'@2x.png'
         //Use returned json to update the values of the three 
         //elements in HTML.  
         //I would print the JSON to the console
