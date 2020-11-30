@@ -40,7 +40,7 @@ function gettingJSON(){
     $.getJSON(query,function(json){
         console.log(json)
         document.getElementById('forecast').style.display='block'
-        console.log(json['main']['temp'])
+        //console.log(json['main']['temp'])
         temp.innerHTML=json['main']['temp'] + ' with '+ json['weather'][0]['description']
         loc.innerHTML=json['name']
         tempImg.src='https://openweathermap.org/img/wn/'+json['weather'][0]['icon']+'@2x.png'
